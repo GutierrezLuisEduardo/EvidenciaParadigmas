@@ -1,3 +1,10 @@
+# Evidencia Demonstración - Paradigmas de programación
+## Planteamiento
+### Contexto
+En entornos urbanos con alto flujo vehicular, los sistemas de monitoreo de tráfico requieren procesar múltiples fuentes de información en tiempo real. Cámaras, sensores de velocidad y detectores de presencia generan datos de manera simultánea. Un sistema secuencial puede provocar retrasos en el análisis de eventos críticos como congestiones, accidentes o saturación de intersecciones.
+
+Se implementará en python, utilizando herramientas nativas, un sistema de simulación para el monitorio de tráfico inteligente, utilizando mecanismso para mejorar el procesamiento de múltiples eventos simultáneos. 
+
 ### Alcance
 El proyecto contempla:
 - Simular múltiples sensores de trágico que generen datos simultáneamente
