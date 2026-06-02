@@ -402,8 +402,7 @@ Solución CONCURRENTE demostró ser óptima.
 Ante estos resultados, puede decirse que reflejan la mayor escalabilidad de la solución concurrente y lo bien que se desempeña cuando hay varios sensores. Por otra parte, esta solución también conduce a overhead en situaciones de pocos sensores, como con la última prueba.
 
 #### Uso de recursos
-El uso de recursos puede verificarse con los siguientes comandos:
-
+El uso de recursos puede verificarse con los siguientes comandos durante el tiempo de ejecución:
 - Para conocer PID del proceso correspondiente a la solución que se esté ejecutando.
     `ps --no-headers -eo pid,user,lstart,etime,cmd --sort=-lstart | grep '[p]ython'`
 - Para ver los detalles y recursos utilizados por hilo.
@@ -423,9 +422,12 @@ En cambio el sistema secuencial mostró un mejor rendimiento temporal cuando el 
 <sub>\* Entiéndase el tiempo que conlleva asignar recursos para realizar el trabajo útil.</sub>
 
 ### Complejidad temporal
-En cuanto a la complejidad temporal de c/solución, la versión secuencial tiene complejidad O(n) donde n = sensores x vehículos, pero con tiempo real afectado por la suma de sleeps.
+En cuanto a la complejidad temporal de c/solución, la versión secuencial tiene complejidad O(n) donde n = sensores x vehículos, pero con tiempo real afectado por la suma de sleeps usados.
 
-En cuanto a la versión concurrente, reduce el tiempo de espera a aproximadamente el del sensor más lento gracias al paralelismo de hilos, mientras que el procesamiento paralelo con multiprocessing es el que mejora el cálculo de estadísticas en grandes volúmenes de datos.
+En cuanto a la versión concurrente, reduce el tiempo de espera a aproximadamente el del sensor más lento gracias al uso de hilos, mientras que el procesamiento paralelo con multiprocessing es el que mejora el cálculo de estadísticas en grandes volúmenes de datos, lo cual es consistente con lo indicado por Aziz et. al (2021), sobre que los programas que utilizan la paralelización para aprovechar los múltiples núcleos se ejecutan más rápido y permiten un mejor uso de los recursos de la CPU.
 
 ## Conclusiones
 Este sistema sería mucho más útil que uno secuencial en la medida que es capaz de procesar múltiples fuentes de información de forma simultánea, toda vez que al sistema secuencial puede atribuírsele la creación de cuellos de botella y retardos significativos ante un alto volumen de eventos, por tales motivos y para un contexto de ciudad, en que haya la necesidad de respuesta en tiempo real ante congestiones, accidentes o saturación de intersecciones, el sistema secuencial no representaría una solución favorable, a diferencia del sistema concurrente y paralelo.
+
+## Referencias
+Aziz, Zina & Abdulqader, Diler & Sallow, Amira & Omer, Herman. (2021). Python Parallel Processing and Multiprocessing. Academic Journal of Nawroz University. 10. 10.25007/ajnu.v10n3a1145. 
