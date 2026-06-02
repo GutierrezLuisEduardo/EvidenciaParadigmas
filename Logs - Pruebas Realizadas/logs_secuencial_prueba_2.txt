@@ -1,0 +1,39 @@
+Iniciando versión SECUENCIAL con         2 sensores y 15 eventos por sensor.
+
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 44, 'velocidad': 21}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 22, 'velocidad': 73}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 49, 'velocidad': 48}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 32, 'velocidad': 33}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 38, 'velocidad': 94}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 15, 'velocidad': 93}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 50, 'velocidad': 88}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 47, 'velocidad': 85}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 40, 'velocidad': 96}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 37, 'velocidad': 90}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 38, 'velocidad': 21}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 24, 'velocidad': 42}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 12, 'velocidad': 23}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 46, 'velocidad': 22}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 11, 'velocidad': 83}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 23, 'velocidad': 52}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 27, 'velocidad': 69}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 41, 'velocidad': 59}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 45, 'velocidad': 78}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 19, 'velocidad': 51}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 24, 'velocidad': 63}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 14, 'velocidad': 25}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 43, 'velocidad': 51}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 8, 'velocidad': 27}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 7, 'velocidad': 43}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 20, 'velocidad': 58}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 33, 'velocidad': 24}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 16, 'velocidad': 62}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 42, 'velocidad': 64}
+Sensor 1 generó: {'sensor': 1, 'vehiculos': 31, 'velocidad': 24}
+
+==================================================
+RESULTADOS - VERSIÓN SECUENCIAL
+==================================================
+Velocidad promedio: 55.40 km/h
+Total de vehículos: 898
+Tiempo total de ejecución:         16.68 segundos

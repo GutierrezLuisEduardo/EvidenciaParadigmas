@@ -1,0 +1,40 @@
+Iniciando simulación con 2 sensores y 15 eventos por sensor.
+
+{'sensor': 0, 'vehiculos': 14, 'velocidad': 95}
+{'sensor': 1, 'vehiculos': 13, 'velocidad': 79}
+{'sensor': 1, 'vehiculos': 44, 'velocidad': 20}
+{'sensor': 0, 'vehiculos': 45, 'velocidad': 82}
+{'sensor': 1, 'vehiculos': 39, 'velocidad': 93}
+{'sensor': 0, 'vehiculos': 15, 'velocidad': 31}
+{'sensor': 1, 'vehiculos': 17, 'velocidad': 97}
+{'sensor': 0, 'vehiculos': 17, 'velocidad': 90}
+{'sensor': 1, 'vehiculos': 14, 'velocidad': 83}
+{'sensor': 0, 'vehiculos': 29, 'velocidad': 96}
+{'sensor': 1, 'vehiculos': 30, 'velocidad': 76}
+{'sensor': 0, 'vehiculos': 13, 'velocidad': 63}
+{'sensor': 1, 'vehiculos': 15, 'velocidad': 65}
+{'sensor': 1, 'vehiculos': 40, 'velocidad': 21}
+{'sensor': 0, 'vehiculos': 43, 'velocidad': 61}
+{'sensor': 0, 'vehiculos': 22, 'velocidad': 81}
+{'sensor': 1, 'vehiculos': 50, 'velocidad': 81}
+{'sensor': 0, 'vehiculos': 35, 'velocidad': 66}
+{'sensor': 1, 'vehiculos': 27, 'velocidad': 21}
+{'sensor': 1, 'vehiculos': 47, 'velocidad': 54}
+{'sensor': 0, 'vehiculos': 46, 'velocidad': 31}
+{'sensor': 0, 'vehiculos': 24, 'velocidad': 81}
+{'sensor': 1, 'vehiculos': 33, 'velocidad': 40}
+{'sensor': 0, 'vehiculos': 42, 'velocidad': 41}
+{'sensor': 1, 'vehiculos': 42, 'velocidad': 81}
+{'sensor': 1, 'vehiculos': 48, 'velocidad': 84}
+{'sensor': 0, 'vehiculos': 42, 'velocidad': 42}
+{'sensor': 1, 'vehiculos': 21, 'velocidad': 98}
+{'sensor': 0, 'vehiculos': 44, 'velocidad': 70}
+{'sensor': 0, 'vehiculos': 21, 'velocidad': 86}
+Datos recolectados: 30 eventos
+
+==================================================
+RESULTADOS FINALES
+==================================================
+Velocidad promedio: 66.97 km/h
+Total de vehículos: 932
+Tiempo total de ejecución: 18.41 segundos

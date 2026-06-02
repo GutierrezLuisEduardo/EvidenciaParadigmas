@@ -1,0 +1,24 @@
+Iniciando versión SECUENCIAL con         1 sensores y 15 eventos por sensor.
+
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 28, 'velocidad': 94}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 49, 'velocidad': 92}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 13, 'velocidad': 87}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 9, 'velocidad': 78}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 45, 'velocidad': 82}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 50, 'velocidad': 44}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 44, 'velocidad': 38}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 38, 'velocidad': 53}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 32, 'velocidad': 45}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 33, 'velocidad': 46}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 19, 'velocidad': 45}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 25, 'velocidad': 49}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 20, 'velocidad': 78}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 19, 'velocidad': 93}
+Sensor 0 generó: {'sensor': 0, 'vehiculos': 14, 'velocidad': 62}
+
+==================================================
+RESULTADOS - VERSIÓN SECUENCIAL
+==================================================
+Velocidad promedio: 65.73 km/h
+Total de vehículos: 438
+Tiempo total de ejecución:         8.56 segundos
