@@ -379,27 +379,22 @@ Solución CONCURRENTE demostró ser óptima.
 |-|-|-|-|
 | **Para 1 sensor y 15 vehículos** |
 | Tiempo | 8.560 s | 15.167 s | La versión secuencial fue 6.607 s más rápida. |
-| Uso de CPU | No disponible en el log | No disponible en el log | No existen métricas de CPU registradas. |
 | Velocidad promedio registrada | 65.73 km/h | 63.47 km/h | Diferencia mínima (≈2.27 km/h). |
 | Total de vehículos registrados | 438 | 352 | La versión secuencial registró 86 vehículos más. |
 | **Para 2 sensores y 15 vehículos** |
 | Tiempo | 16.682 s | 18.413 s | La versión secuencial fue 1.732 s más rápida. |
-| Uso de CPU | No disponible en el log | No disponible en el log | No existen métricas de CPU registradas. |
 | Velocidad promedio registrada | 55.40 km/h | 66.97 km/h| La concurrente reportó mayor velocidad promedio.|
 | Total de vehículos registrados | 898 | 932| La concurrente registró 34 vehículos más. |
 | **Para 3 sensores y 35 vehículos** |
 | Tiempo | 63.328 s | 30.074 s | La concurrente fue aproximadamente 2.1 veces más rápida. |
-| Uso de CPU | No disponible en el log | No disponible en el log | No existen métricas de CPU registradas. |
 | Velocidad promedio registrada | 57.64 km/h | 62.01 km/h| La concurrente reportó mayor velocidad promedio.|
 | Total de vehículos registrados | 2817 | 2972 | La concurrente registró 155 vehículos más.|
 | **Para 6 sensores y 50 vehículos** |
 | Tiempo | 182.337 s| 40.234 s | La concurrente fue aproximadamente 4.5 veces más rápida. |
-| Uso de CPU | No disponible en el log | No disponible en el log | No existen métricas de CPU registradas. |
 | Velocidad promedio registrada | 61.09 km/h | 60.74 km/h| Resultados prácticamente equivalentes.|
 | Total de vehículos registrados | 8172 | 8373 | La concurrente registró 201 vehículos más.|
 | **Para 8 sensores y 50 vehículos** |
 | Tiempo | 237.417 s| 41.771 s | La concurrente fue aproximadamente 5.7 veces más rápida. |
-| Uso de CPU | No disponible en el log | No disponible en el log | No existen métricas de CPU registradas. |
 | Velocidad promedio registrada | 60.56 km/h | 61.06 km/h| Diferencia mínima (≈0.50 km/h).|
 | Total de vehículos registrados | 10541| 11673| La concurrente registró 1132 vehículos más. |
 
