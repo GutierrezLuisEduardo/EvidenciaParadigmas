@@ -429,5 +429,5 @@ En cuanto a la versión concurrente, reduce el tiempo de espera a aproximadament
 Este sistema sería mucho más útil que uno secuencial en la medida que es capaz de procesar múltiples fuentes de información de forma simultánea, toda vez que al sistema secuencial puede atribuírsele la creación de cuellos de botella y retardos significativos ante un alto volumen de eventos, por tales motivos y para un contexto de ciudad, en que haya la necesidad de respuesta en tiempo real ante congestiones, accidentes o saturación de intersecciones, el sistema secuencial no representaría una solución favorable, a diferencia del sistema concurrente y paralelo.
 
 ## Referencias
-Aziz, Zina & Abdulqader, Diler & Sallow, Amira & Omer, Herman. (2021). Python Parallel Processing and Multiprocessing. Academic Journal of Nawroz University. 10. 10.25007/ajnu.v10n3a1145.
-Herzner, Wolfgang. (2003). Message Queues. Three Patterns for Asynchronous Information Exchange.. 221-242. 
+- Aziz, Zina & Abdulqader, Diler & Sallow, Amira & Omer, Herman. (2021). Python Parallel Processing and Multiprocessing. Academic Journal of Nawroz University. 10. 10.25007/ajnu.v10n3a1145.
+- Herzner, Wolfgang. (2003). Message Queues. Three Patterns for Asynchronous Information Exchange.. 221-242. 
