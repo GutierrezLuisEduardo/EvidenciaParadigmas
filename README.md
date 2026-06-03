@@ -42,8 +42,6 @@ Se utilizará:
 - `multiprocessing`
 - División de carga de trabajo entre procesos.
 
-
-
 ## Modelos
 ### Explicar la lógica, paradigma y arquitectura de la solución
 La arquitectura propuesta sigue un modelo productor-consumidor, útil para separar a los procesos que producen datos, de aquellos que les consumen datos.  Bajo este patrón, se acopla el intercambio de información que se da entre distintos ciclos que corren a ritmo distinto.
@@ -64,7 +62,9 @@ Los sensores (hilos independientes) producen eventos simultáneamente, enviados 
 Dispone de los eventos de la cola y esos datos son divididos para su análisis estadístico entre dos procesos, aquel que calcula el promedio de velocidad, y el que calcula la cantidad de vehículos.
 
 #### Detalles
-En el caso de la solución concurrente, el uso de `queue.Queue()` permitió evitar race conditions en que se accediera a un mismo recurso y que la comunicación descrita anteriormente, se diera de manera `thread-safe`
+El uso de la cola resolvió el problema descrito por Hezner (2003), _"The generation of information elements like requests or events must be decoupled from their processing, but the order in which they are processed must be the same in which they have been generated."_, ante una necesidad de intercambiar eventos una vez que hayan sido producidos (en tiempo diferido) y como uso de mecanismo de almacenamiento temporal para el intercambio asíncrono de eventos (que el consumidor no requiera de que el productor haya terminado).
+
+Además, el uso de `queue.Queue()` permitió evitar race conditions en que se accediera a un mismo recurso y que la comunicación descrita anteriormente, se diera de manera 'Thread-safe' si consideramos el manejo de excepciones y tipo de estructura. Y, como sugiere Hezner (2003), la cola resultó ser una estructura conveniente pues permitió mantener el orden de procesamiento en la comunicación asíncrona entre productor-consumidor.
 
 #### Arquitectura Gral,
 - Capa de generación de eventos.
@@ -432,4 +432,5 @@ En cuanto a la versión concurrente, reduce el tiempo de espera a aproximadament
 Este sistema sería mucho más útil que uno secuencial en la medida que es capaz de procesar múltiples fuentes de información de forma simultánea, toda vez que al sistema secuencial puede atribuírsele la creación de cuellos de botella y retardos significativos ante un alto volumen de eventos, por tales motivos y para un contexto de ciudad, en que haya la necesidad de respuesta en tiempo real ante congestiones, accidentes o saturación de intersecciones, el sistema secuencial no representaría una solución favorable, a diferencia del sistema concurrente y paralelo.
 
 ## Referencias
-Aziz, Zina & Abdulqader, Diler & Sallow, Amira & Omer, Herman. (2021). Python Parallel Processing and Multiprocessing. Academic Journal of Nawroz University. 10. 10.25007/ajnu.v10n3a1145. 
+Aziz, Zina & Abdulqader, Diler & Sallow, Amira & Omer, Herman. (2021). Python Parallel Processing and Multiprocessing. Academic Journal of Nawroz University. 10. 10.25007/ajnu.v10n3a1145.
+Herzner, Wolfgang. (2003). Message Queues. Three Patterns for Asynchronous Information Exchange.. 221-242. 
