@@ -36,11 +36,13 @@ Se utilizará:
 - Bloqueos simples para sincronización
 
 ### Programación Paralela
-Para llevar a cabo cálculos estadísticos sobre grandes conjuntos de datos de tráfico, en paralelo, buscando reducir el tiempo de procesamiento a través del aprovechamiento de múltiples núcleos del procesador.
+Para llevar a cabo cálculos estadísticos sobre grandes conjuntos de datos de tráfico, en paralelo, buscando reducir el tiempo de procesamiento a través del aprovechamiento de múltiples núcleos del procesador, pues se consideró a las limitaciones de los hilos en Python debido al GIL (Global Interpreter Lock) que no permite la ejecución de varios hilos a la vez; No haber usado esto, habría supuesto una ejecuión secuencial de hilos pero usar subprocesos como lo plantea R. Eggen et al. (2019, como se citó en Aziz et al., 2021).
 
 Se utilizará:
 - `multiprocessing`
 - División de carga de trabajo entre procesos.
+
+
 
 ## Modelos
 ### Explicar la lógica, paradigma y arquitectura de la solución
