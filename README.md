@@ -375,28 +375,40 @@ Solución CONCURRENTE demostró ser óptima.
 ```
 </details>
 
+**Para 1 sensor y 15 vehículos**
 | Aspecto | Versión Secuencial | Versión Concurrente/Paralela | Observación |
 |-|-|-|-|
-| **Para 1 sensor y 15 vehículos** |
-| Tiempo | 8.560 s | 15.167 s | La versión secuencial fue 6.607 s más rápida. |
-| Velocidad promedio registrada | 65.73 km/h | 63.47 km/h | Diferencia mínima (≈2.27 km/h). |
-| Total de vehículos registrados | 438 | 352 | La versión secuencial registró 86 vehículos más. |
-| **Para 2 sensores y 15 vehículos** |
-| Tiempo | 16.682 s | 18.413 s | La versión secuencial fue 1.732 s más rápida. |
-| Velocidad promedio registrada | 55.40 km/h | 66.97 km/h| La concurrente reportó mayor velocidad promedio.|
-| Total de vehículos registrados | 898 | 932| La concurrente registró 34 vehículos más. |
-| **Para 3 sensores y 35 vehículos** |
-| Tiempo | 63.328 s | 30.074 s | La concurrente fue aproximadamente 2.1 veces más rápida. |
-| Velocidad promedio registrada | 57.64 km/h | 62.01 km/h| La concurrente reportó mayor velocidad promedio.|
-| Total de vehículos registrados | 2817 | 2972 | La concurrente registró 155 vehículos más.|
-| **Para 6 sensores y 50 vehículos** |
+| Tiempo | 8.560s | 15.167s | Secuencial, 6.607s más rápido. |
+| Velocidad promedio registrada | 65.73 km/h | 63.47 km/h | Secuencial reportó mayor velocidad promedio. |
+| Total de vehículos registrados | 438 | 352 | Secuencial registró 86 vehículos más. |
+
+**Para 2 sensores y 15 vehículos**
+| Aspecto | Versión Secuencial | Versión Concurrente/Paralela | Observación |
+|-|-|-|-|
+| Tiempo | 16.682s | 18.413s | Secuencial fue 1.732s más rápida. |
+| Velocidad promedio registrada | 55.40 km/h | 66.97 km/h| Concurrente reportó mayor velocidad promedio. |
+| Total de vehículos registrados | 898 | 932 | Concurrente registró 34 vehículos más. |
+
+**Para 3 sensores y 35 vehículos**
+| Aspecto | Versión Secuencial | Versión Concurrente/Paralela | Observación |
+|-|-|-|-|
+| Tiempo | 63.328s | 30.074s | Concurrente fue aprox. 2.1 veces más rápida. |
+| Velocidad promedio registrada | 57.64 km/h | 62.01 km/h | Concurrente reportó mayor velocidad promedio. |
+| Total de vehículos registrados | 2817 | 2972 | Concurrente registró 155 vehículos más. |
+
+**Para 6 sensores y 50 vehículos**
+| Aspecto | Versión Secuencial | Versión Concurrente/Paralela | Observación |
+|-|-|-|-|
 | Tiempo | 182.337 s| 40.234 s | La concurrente fue aproximadamente 4.5 veces más rápida. |
-| Velocidad promedio registrada | 61.09 km/h | 60.74 km/h| Resultados prácticamente equivalentes.|
-| Total de vehículos registrados | 8172 | 8373 | La concurrente registró 201 vehículos más.|
-| **Para 8 sensores y 50 vehículos** |
-| Tiempo | 237.417 s| 41.771 s | La concurrente fue aproximadamente 5.7 veces más rápida. |
-| Velocidad promedio registrada | 60.56 km/h | 61.06 km/h| Diferencia mínima (≈0.50 km/h).|
-| Total de vehículos registrados | 10541| 11673| La concurrente registró 1132 vehículos más. |
+| Velocidad promedio registrada | 61.09 km/h | 60.74 km/h | Diferencia mínima. |
+| Total de vehículos registrados | 8172 | 8373 | La concurrente registró 201 vehículos más. |
+
+**Para 8 sensores y 50 vehículos**
+| Aspecto | Versión Secuencial | Versión Concurrente/Paralela | Observación |
+|-|-|-|-|
+| Tiempo | 237.417s | 41.771s | Concurrente fue aproximadamente 5.7 veces más rápida. |
+| Velocidad promedio registrada | 60.56 km/h | 61.06 km/h | Diferencia mínima. |
+| Total de vehículos registrados | 10541 | 11673 | La concurrente registró 1132 vehículos más.|
 
 Ante estos resultados, puede decirse que reflejan la mayor escalabilidad de la solución concurrente y lo bien que se desempeña cuando hay varios sensores. Por otra parte, esta solución también conduce a overhead en situaciones de pocos sensores, como con la última prueba.
 
@@ -421,12 +433,12 @@ En cambio el sistema secuencial mostró un mejor rendimiento temporal cuando el 
 <sub>\* Entiéndase el tiempo que conlleva asignar recursos para realizar el trabajo útil.</sub>
 
 ### Complejidad temporal
-En cuanto a la complejidad temporal de c/solución, la versión secuencial tiene complejidad O(n) donde n = sensores x vehículos, pero con tiempo real afectado por la suma de sleeps usados.
+En cuanto a la complejidad temporal de c/solución, la versión secuencial tiene complejidad $O(n)$ donde $n$ = sensores x vehículos, pero con tiempo real afectado por la suma de sleeps usados.
 
-En cuanto a la versión concurrente, reduce el tiempo de espera a aproximadamente el del sensor más lento gracias al uso de hilos, mientras que el procesamiento paralelo con multiprocessing es el que mejora el cálculo de estadísticas en grandes volúmenes de datos, lo cual es consistente con lo indicado por Aziz et. al (2021), sobre que los programas que utilizan la paralelización para aprovechar los múltiples núcleos se ejecutan más rápido y permiten un mejor uso de los recursos de la CPU.
+En cuanto a la versión concurrente, aunque sigue siendo $O(n)$, se reduce el tiempo de espera a aproximadamente el del sensor más lento gracias al uso de hilos, mientras que el procesamiento paralelo con multiprocessing es el que mejora el cálculo de estadísticas en grandes volúmenes de datos, lo cual es consistente con lo indicado por Aziz et. al (2021), sobre que los programas que utilizan la paralelización para aprovechar los múltiples núcleos se ejecutan más rápido y permiten un mejor uso de los recursos de la CPU.
 
 ## Conclusiones
-Este sistema sería mucho más útil que uno secuencial en la medida que es capaz de procesar múltiples fuentes de información de forma simultánea, toda vez que al sistema secuencial puede atribuírsele la creación de cuellos de botella y retardos significativos ante un alto volumen de eventos, por tales motivos y para un contexto de ciudad, en que haya la necesidad de respuesta en tiempo real ante congestiones, accidentes o saturación de intersecciones, el sistema secuencial no representaría una solución favorable, a diferencia del sistema concurrente y paralelo.
+Este sistema demuestra ser mucho más útil para los contextos descritos en un inicio, y lo es en la mediad que su carga de trabajo justifique el overhead inicial. Por otra parte, al sistema secuencial puede atribuírsele la implicación en cuellos de botella y retardos significativos ante un alto volumen de eventos.
 
 ## Referencias
 - Aziz, Zina & Abdulqader, Diler & Sallow, Amira & Omer, Herman. (2021). Python Parallel Processing and Multiprocessing. Academic Journal of Nawroz University. 10. 10.25007/ajnu.v10n3a1145.
