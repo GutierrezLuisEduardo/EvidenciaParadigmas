@@ -5,8 +5,10 @@ En entornos urbanos con alto flujo vehicular, los sistemas de monitoreo de tráf
 
 Cámaras, sensores de velocidad y detectores de presencia generan datos de manera simultánea, en cambio, un sistema secuencial puede provocar retrasos en el análisis de eventos críticos como congestiones, accidentes o saturación de intersecciones.
 
-Se implementará en python, utilizando herramientas nativas, un sistema de simulación para el monitoreo de tráfico inteligente con un mecanismo para mejorar el procesamiento de múltiples eventos simultáneos.
+#### Propósito
+El propósito de este proyecto es optimizar el flujo de información y realizar cálculos estadísticos sobre la velocidad y el volumen vehicular de manera eficiente, en contextos de sistemas de tráfico (simulados) con varios sensores que envíen simultáneamente información de eventos y que necesiten ser procesados de manera centralizada y con eficiencia. 
 
+Se implementará en python, utilizando herramientas nativas, un sistema de simulación para el monitoreo de tráfico inteligente con un mecanismo para mejorar el procesamiento de múltiples eventos simultáneos.
 Se someterá a determinadas pruebas para la comparación con una solución secuencial y concluir sobre su utilidad.
 
 ### Alcance
