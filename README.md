@@ -64,9 +64,9 @@ Los sensores (hilos independientes) producen eventos simultáneamente, enviados 
 Dispone de los eventos de la cola y esos datos son divididos para su análisis estadístico entre dos procesos, aquel que calcula el promedio de velocidad, y el que calcula la cantidad de vehículos.
 
 #### Detalles
-El uso de la cola resolvió el problema descrito por Hezner (2003), _"The generation of information elements like requests or events must be decoupled from their processing, but the order in which they are processed must be the same in which they have been generated."_, ante una necesidad de intercambiar eventos una vez que hayan sido producidos (en tiempo diferido) y como uso de mecanismo de almacenamiento temporal para el intercambio asíncrono de eventos (que el consumidor no requiera de que el productor haya terminado).
+El uso de la cola resolvió el problema descrito por Herzner (2003), _"The generation of information elements like requests or events must be decoupled from their processing, but the order in which they are processed must be the same in which they have been generated."_, ante una necesidad de intercambiar eventos una vez que hayan sido producidos (en tiempo diferido) y como uso de mecanismo de almacenamiento temporal para el intercambio asíncrono de eventos (que el consumidor no requiera de que el productor haya terminado).
 
-Además, el uso de `queue.Queue()` permitió evitar race conditions en que se accediera a un mismo recurso y que la comunicación descrita anteriormente, se diera de manera 'Thread-safe' si consideramos el manejo de excepciones y tipo de estructura. Y, como sugiere Hezner (2003), la cola resultó ser una estructura conveniente pues permitió mantener el orden de procesamiento en la comunicación asíncrona entre productor-consumidor.
+Además, el uso de `queue.Queue()` permitió evitar race conditions en que se accediera a un mismo recurso y que la comunicación descrita anteriormente, se diera de manera 'Thread-safe' si consideramos el manejo de excepciones y tipo de estructura. Y, como sugiere Herzner (2003), la cola resultó ser una estructura conveniente pues permitió mantener el orden de procesamiento en la comunicación asíncrona entre productor-consumidor.
 
 #### Arquitectura Gral,
 - Capa de generación de eventos.
